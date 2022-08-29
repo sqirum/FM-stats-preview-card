@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap');
+
+body {
+    background-color: #0A0C1C;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+}
+
+main {
+    display: flex;
+    border-radius: 8px;
+    background-color: #1B1937;
+    max-width: 327px;
+    flex-direction: column;
+}
+
+.blender {
+    background-color: #AB5CDB ;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.image {
+    background:url('images/image-header-mobile.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    min-height: 240px;
+    mix-blend-mode: multiply;
+    opacity: 0.75;
+}
+
+.text {
+    padding: 30px;
+}
+
+h1 {
+    line-height: 32px;
+    font-size: 28px;
+    text-align: center;
+    color: white;
+    font-weight: 700;
+}
+
+h1 span {
+    color: #AB5CDB;
+}
+
+p {
+    line-height: 25px;
+    font-size: 15px;
+    color: white;
+    opacity: 75%;
+    text-align: center;
+}
+
+h2 {
+    font-weight: 700;
+    line-height: 29px;
+    color: white;
+    font-size: 24px;
+    text-align: center;
+    margin: 0;
+    margin-top: 10px;
+}
+
+.stats {
+    display: flex;
+    flex-direction: column;
+}
+
+.stats p {
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+    line-height: 25px;
+    opacity: 60%;
+    font-size: 12px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0;
+}
+
+@media only screen and (min-width: 769px) {
+    main {
+        max-width: 1110px;
+        flex-direction: row;
+    }
+
+    .text {
+        padding: 70px;
+    }
+
+    .blender {
+        background-color: #AB5CDB ;
+        border-bottom-right-radius: 8px;
+        border-top-right-radius: 8px;
+        border-top-left-radius: 0px;
+        order: 1;
+        width: 100%;
+    }
+
+    .image {
+        background-image: url('images/image-header-desktop.jpg');
+        border-bottom-right-radius: 8px;
+        border-top-right-radius: 8px;
+        border-top-left-radius: 0px;
+        height: 100%;
+    }
+
+    h1 {
+        text-align: start;
+    }
+
+    p {
+        text-align: start;
+    }
+
+    .stats {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+  }
